@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-two-fifth {
+  width: 40%;
+}
+
+.column-three-fifths {
+  width: 60%;
+}
+
+.column-one-sixth {
+  width: calc(100% / 6);
+}
+
+img {
+  width: 60%;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
