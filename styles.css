@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 500px;
   margin: auto;
   padding: 1rem;
 }
@@ -14,11 +14,20 @@ body {
   flex-wrap: wrap;
 }
 
-.col,
-.col-sm-full,
-.col-sm-third,
-.col-lg-half {
+.col-sm-full {
   width: 100%;
+}
+.col-sm-half {
+  width: 50%;
+  text-align: center;
+}
+
+.info-section {
+  line-height: 2;
+}
+
+.about-section {
+  margin: 1rem 0;
 }
 
 .big-logo {
@@ -35,6 +44,10 @@ h1 {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   line-height: normal;
+}
+
+.col-sm-half> h3 {
+  margin: 0.2rem 0;
 }
 
 a {
@@ -69,16 +82,13 @@ a:hover {
   max-height: 170px;
 }
 
-.info-section {
-}
-
-.col-sm-third > p {
+.col-sm-half > p {
   margin: 0;
   line-height: 1.1;
 }
 
 .small-logo {
-  width: 100%;
+  width: 40%;
 }
 
 .text-upper {
@@ -95,42 +105,23 @@ a:hover {
   background-color: #F8F7F7;
 }
 
-@media only screen and (min-width: 375px) {
-  .col-sm-full {
-    width: 100%;
-    padding: 0.5rem;
-  }
-  .col-sm-half {
-    width: 50%;
-    padding: 1rem;
-  }
-  .col-sm-third {
-    width: calc(100% / 3);
-    padding: 0 0.3rem;
-  }
-  .small-logo {
-    padding-left: 1rem;
-  }
-  .info-link-section {
-    padding-right: 1rem;
-  }
-  .col {
-    margin: auto;
-  }
+.text-center {
+  text-align: center;
+  margin: auto;
 }
 
 @media only screen and (min-width: 500px) {
+  .container {
+    max-width: 1400px;
+    padding: 1.5rem;
+  }
   .col-lg-half {
     width: 50%;
-    padding: 0 1rem;
   }
-  .col-lg-third {
-  text-align: center;
-  }
-  .col {
+  header {
     margin: auto;
   }
   .small-logo {
-    width: 40%
+    width: 30%
   }
 }
