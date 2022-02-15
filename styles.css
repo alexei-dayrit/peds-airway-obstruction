@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 500px;
   margin: auto;
   padding: 1rem;
 }
@@ -14,11 +14,18 @@ body {
   flex-wrap: wrap;
 }
 
-.col,
-.col-sm-full,
-.col-sm-third,
-.col-lg-half {
+.col-sm-full {
   width: 100%;
+  padding: 0.3rem;
+}
+.col-sm-half {
+  width: 50%;
+  text-align: center;
+  padding: 0.3rem;
+}
+
+.about-section {
+  margin: 1rem 0;
 }
 
 .big-logo {
@@ -32,30 +39,29 @@ hr {
 }
 
 h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bebas Neue', cursive;
   text-align: center;
   line-height: normal;
+  word-spacing: 2px;
+}
+
+.col-sm-half> h3 {
+  margin: 0.2rem 0;
 }
 
 a {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .protocol-link,
+.survey-link,
 .footer-link {
   text-decoration: none;
   color: #06c;
-  background-color: #F8F7F7;
+  background-color: #FFEFEF;
   line-height: 1.5;
   padding: 0.2rem 0;
   display: block;
-  text-align: center;
-}
-
-.info-link {
-  text-decoration: none;
-  color: #06c;
-  line-height: 1.5;
   text-align: center;
 }
 
@@ -63,22 +69,19 @@ a:hover {
   text-decoration: underline;
 }
 
-.section-image {
+.protocol-image {
   object-fit: contain;
   width: 100%;
   max-height: 170px;
 }
 
-.info-section {
-}
-
-.col-sm-third > p {
+.address-section > p {
   margin: 0;
   line-height: 1.1;
 }
 
 .small-logo {
-  width: 100%;
+  width: 30%;
 }
 
 .text-upper {
@@ -92,45 +95,42 @@ a:hover {
 .footer {
   margin-top: 0.5rem;
   line-height: normal;
-  background-color: #F8F7F7;
+  background-color: #FFEFEF;
 }
 
-@media only screen and (min-width: 375px) {
-  .col-sm-full {
-    width: 100%;
-    padding: 0.5rem;
-  }
-  .col-sm-half {
-    width: 50%;
-    padding: 1rem;
-  }
-  .col-sm-third {
-    width: calc(100% / 3);
-    padding: 0 0.3rem;
-  }
-  .small-logo {
-    padding-left: 1rem;
-  }
-  .info-link-section {
-    padding-right: 1rem;
-  }
-  .col {
-    margin: auto;
-  }
+.text-center {
+  text-align: center;
+  margin: auto;
+}
+
+.background1 {
+  background-color: #92A9BD;
+}
+
+.background2 {
+  background-color: #7C99AC;
+}
+
+.background3 {
+  background-color: #7C99AC;
+}
+
+.background4 {
+  background-color: #D3DEDC;
 }
 
 @media only screen and (min-width: 500px) {
+  .container {
+    max-width: 1400px;
+    padding: 1.5rem;
+  }
   .col-lg-half {
     width: 50%;
-    padding: 0 1rem;
   }
-  .col-lg-third {
-  text-align: center;
-  }
-  .col {
+  header {
     margin: auto;
   }
   .small-logo {
-    width: 40%
+    width: 30%
   }
 }
