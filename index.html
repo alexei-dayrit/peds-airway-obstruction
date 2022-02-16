@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,16 +11,41 @@
   <link rel="stylesheet" href="reset.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <div class="container">
-    <div class="row">
+    <header class="primary-header flex">
+      <div>
+        <img class="big-logo" src="images/uci-nursing-logo-lg.png" alt="UCI Nursing Logo">
+      </div>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+          <li class="active"><a href="">
+            <span aria-hidden="true">00</span>CPR</a>
+          </li>
+          <li><a href="">
+            <span aria-hidden="true">01</span>Obstruction</a>
+          </li>
+          <li><a href="">
+            <span aria-hidden="true">02</span>Surveys</a>
+          </li>
+          <li><a href="">
+            <span aria-hidden="true">03</span>Resources</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- <div class="row">
       <header class="col">
         <img class="big-logo" src="images/uci-nursing-logo-lg.png" alt="UCI Nursing Logo">
       </header>
-    </div>
+    </div> -->
     <hr>
     <div class="row">
-      <div class="col-sm-full col-lg-half letter-spacing background4">
+      <div class="col-sm-full col-lg-half letter-spacing">
         <h1>Pediatric CPR</h1>
         <div>
           <img class="protocol-image" src="images/detective-pika.jpeg" alt="CPR Image">
@@ -31,7 +57,7 @@
         </p>
         <a class="protocol-link text-upper" href="">View Protocol</a>
       </div>
-      <div class="col-sm-full col-lg-half letter-spacing background1">
+      <div class="col-sm-full col-lg-half letter-spacing">
         <h1>Airway Obstruction</h1>
         <div>
           <img class="protocol-image" src="images/charmander.jpeg" alt="Airway Obstruction Image">
@@ -43,7 +69,7 @@
         </p>
         <a class="protocol-link text-upper" href="">View Protocol</a>
       </div>
-      <div class="col-sm-full col-lg-half letter-spacing background4">
+      <div class="col-sm-full col-lg-half letter-spacing">
         <h1>Surveys</h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab fugit vel
@@ -59,14 +85,18 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-full col-lg-half letter-spacing background1">
+      <div class="col-sm-full col-lg-half letter-spacing">
         <h1>Other Resources</h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab fugit vel
           in eligendi ratione commodi doloremque quasi beatae molestias? Provident
           ipsum quam sunt unde obcaecati quas debitis, officia similique atque.
         </p>
-        <a class="protocol-link text-upper" href="">Learn more</a>
+        <div class="row">
+          <div class="col-sm-full">
+            <a class="survey-link text-upper" href="">Learn more</a>
+          </div>
+        </div>
       </div>
     </div>
     <hr>
@@ -88,5 +118,9 @@
       </div>
     </div>
   </div>
+  <a style="color: black; font-size: 8px" href="https://www.flaticon.com/free-icons/open-menu" title="open menu icons">Open menu icons
+    created by ariefstudio -
+    Flaticon</a>
+  <script src="main.js"></script>
 </body>
 </html>
