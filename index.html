@@ -9,45 +9,42 @@
   <script src="https://kit.fontawesome.com/6f51956228.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="reset.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather:wght@300&display=swap"
+  rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
-    <header class="primary-header flex">
-      <div>
-        <img class="big-logo" src="images/uci-nursing-logo-lg.png" alt="UCI Nursing Logo">
-      </div>
-      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-        <span class="sr-only">Menu</span>
-      </button>
-      <nav>
-        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-          <li class="active"><a href="">
-              <span aria-hidden="true"></span>CPR</a>
-          </li>
-          <li><a href="">
-              <span aria-hidden="true"></span>Obstruction</a>
-          </li>
-          <li><a href="">
-              <span aria-hidden="true"></span>Surveys</a>
-          </li>
-          <li><a href="">
-              <span aria-hidden="true"></span>Resources</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- <div class="row">
-      <header class="col">
-        <img class="big-logo" src="images/uci-nursing-logo-lg.png" alt="UCI Nursing Logo">
+    <div class="fixed-container">
+      <header class="primary-header flex">
+        <div>
+          <img class="big-logo" src="images/uci-nursing-logo-lg.png" alt="UCI Nursing Logo">
+        </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <span class="sr-only">Menu</span>
+        </button>
+        <nav>
+          <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+            <li><a class="cpr-nav-link" href="">
+                <span aria-hidden="true"></span>CPR</a>
+            </li>
+            <li><a href="">
+                <span aria-hidden="true"></span>Airway Obstruction</a>
+            </li>
+            <li><a href="">
+                <span aria-hidden="true"></span>Surveys</a>
+            </li>
+            <li><a href="">
+                <span aria-hidden="true"></span>About Us</a>
+            </li>
+          </ul>
+        </nav>
       </header>
-    </div> -->
-    <hr>
-    <div class="container home-container">
+    </div>
+    <div class="container">
       <div class="row">
-        <div class="col-sm-full col-lg-half letter-spacing">
-          <h1>Pediatric CPR</h1>
+        <div class="col-sm-full col-lg-full letter-spacing" id="cpr-protocol">
+          <h1 class="text-upper">Pediatric CPR</h1>
           <div>
             <img class="protocol-image" src="images/detective-pika.jpeg" alt="CPR Image">
           </div>
@@ -61,7 +58,7 @@
             CPR Protocol
           </a>
           <a class="protocol-link text-upper" href="pdf/post-arrest-flowsheet.pdf">
-            Post-arrest: Snot-PP flowsheet
+            Post-arrest Flowsheet: "Snot-PP"
           </a>
           <a class="protocol-link text-upper" href="pdf/milestones-chart.pdf">
             Milestones
@@ -70,67 +67,82 @@
             Educational Links
           </a>
         </div>
-        <div class="col-sm-full col-lg-half letter-spacing">
-          <h1>Airway Obstruction</h1>
-          <p>
-            View full protocol for both upper and lower airway obstruction flowsheets.
-          </p>
-          <a class="protocol-link text-upper" href="pdf/full-airway-obstruction-protocol.pdf">View Full Protocol</a>
-        </div>
-        <div class="col-sm-full col-lg-half letter-spacing">
-          <h1>Upper Airway Obstruction</h1>
-          <div>
-            <img class="protocol-image" src="images/detective-pika.jpeg" alt="CPR Image">
-          </div>
-          <p>
-          <ol>
-            <ol type="i">
-              <li>Clinical manifestations:</li>
-              <ol type="a">
-                <li>Barking cough, hoarseness, inspiratory stridor</li>
-                <li>Ingestion, gasping, sudden onset of symptoms, drooling</li>
-                <li>No spontaneous coughing, absent lung sounds</li>
-                <li>Angioedema, urticaria rash</li>
-              </ol>
-              <li>The patient may have ingested foregin body, had an exposure to an allergen, or have an infection.</li>
-            </ol>
-          </ol>
-          <p>Please see the protocol for immediate care based upon signs and symptoms.</p>
+      </div>
 
-          </p>
-          <a class="protocol-link text-upper" href="pdf/upper-airway-protocol.pdf">Protocol</a>
-          <a class="protocol-link text-upper" href="images/upper-airway-badge.png">Badge Buddy</a>
-          <a class="upper-educational-link protocol-link text-upper" href="pages/uao-educational-links.html">Educational
-            Links</a>
-        </div>
-        <div class="col-sm-full col-lg-half letter-spacing">
-          <h1>Lower Airway Obstruction</h1>
-          <div>
-            <img class="protocol-image" src="images/charmander.jpeg" alt="Airway Obstruction Image">
+
+      <!-- AIRWAY OBSTRUCTION -->
+      <!-- AIRWAY OBSTRUCTION -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-full col-lg-full letter-spacing">
+            <h1 class="text-upper">Airway Obstruction</h1>
+            <p>
+              View full protocol for both upper and lower airway obstruction flowsheets.
+            </p>
+            <a class="protocol-link text-upper" href="pdf/full-airway-obstruction-protocol.pdf">View Full Protocol</a>
           </div>
-          <p>
-          <ol>
-            <ol type="i">
-              <li>Clinical manifestations:</li>
-              <ol type="a">
-                <li>Child is unable to feed well or speak more than 1-2 words at a time; grunting</li>
-                <li>High-pitched wheezing</li>
-                <li>Severe, multiple retractions; tachypnea</li>
-                <li>Persistent coughing</li>
-                <li>Increased respiratory effort</li>
-                <li>Post-tussive emesis/rhinorrhea/thick sputum</li>
+          <div class="col-sm-full col-lg-half letter-spacing">
+            <h2 class="text-upper">Upper Airway Obstruction</h2>
+            <div>
+              <img class="protocol-image" src="images/detective-pika.jpeg" alt="CPR Image">
+            </div>
+            <p>
+            <ol>
+              <ol type="i">
+                <li>Clinical manifestations:</li>
+                <ol type="a">
+                  <li>Barking cough, hoarseness, inspiratory stridor</li>
+                  <li>Ingestion, gasping, sudden onset of symptoms, drooling</li>
+                  <li>No spontaneous coughing, absent lung sounds</li>
+                  <li>Angioedema, urticaria rash</li>
+                </ol>
+                <li>The patient may have ingested foregin body, had an exposure to an allergen, or have an infection.</li>
               </ol>
             </ol>
-          </ol>
-          <p>Please see the protocol for immediate care based upon signs and symptoms.</p>
-          </p>
-          <a class="protocol-link text-upper" href="pdf/lower-airway-protocol.pdf">Protocol</a>
-          <a class="protocol-link text-upper" href="images/lower-airway-badge.png">Badge Buddy</a>
-          <a class="upper-educational-link protocol-link text-upper" href="pages/lao-educational-links.html">Educational
-            Links</a>
+            <p>Please see the protocol for immediate care based upon signs and symptoms.</p>
+            </p>
+            <a class="protocol-link text-upper" href="pdf/upper-airway-protocol.pdf">Protocol</a>
+            <a class="protocol-link text-upper" href="images/upper-airway-badge.png">Badge Buddy: "Barking Cough"</a>
+            <a class="upper-educational-link protocol-link text-upper" href="pages/uao-educational-links.html">Educational
+              Links</a>
+          </div>
+          <div class="col-sm-full col-lg-half letter-spacing">
+            <h2 class="text-upper">Lower Airway Obstruction</h2>
+            <div>
+              <img class="protocol-image" src="images/charmander.jpeg" alt="Airway Obstruction Image">
+            </div>
+            <p>
+            <ol>
+              <ol type="i">
+                <li>Clinical manifestations:</li>
+                <ol type="a">
+                  <li>Child is unable to feed well or speak more than 1-2 words at a time; grunting</li>
+                  <li>High-pitched wheezing</li>
+                  <li>Severe, multiple retractions; tachypnea</li>
+                  <li>Persistent coughing</li>
+                  <li>Increased respiratory effort</li>
+                  <li>Post-tussive emesis/rhinorrhea/thick sputum</li>
+                </ol>
+              </ol>
+            </ol>
+            <p>Please see the protocol for immediate care based upon signs and symptoms.</p>
+            </p>
+            <a class="protocol-link text-upper" href="pdf/lower-airway-protocol.pdf">Protocol</a>
+            <a class="protocol-link text-upper" href="images/lower-airway-badge.png">Badge Buddy: "I Wheezed"</a>
+            <a class="upper-educational-link protocol-link text-upper" href="pages/lao-educational-links.html">
+              Educational Links
+            </a>
+          </div>
         </div>
-        <div class="col-sm-full col-lg-half letter-spacing">
-          <h1>Surveys</h1>
+      </div>
+
+      <!-- SURVEYS -->
+      <!-- SURVEYS -->
+
+      <div class="column">
+        <div class="col-sm-full col-lg-full letter-spacing">
+          <h1 class="text-upper">Surveys</h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab fugit vel
             in eligendi ratione commodi doloremque quasi beatae molestias? Provident
@@ -151,7 +163,8 @@
             </div>
           </div>
         </div>
-        <!-- <div class="col-sm-full col-lg-half letter-spacing">
+      </div>
+      <!-- <div class="col-sm-full col-lg-half letter-spacing">
           <h1>Other Resources</h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab fugit vel
@@ -164,13 +177,14 @@
             </div>
           </div>
         </div> -->
-      </div>
-      <hr>
+
+
+      <!-- ABOUT US -->
+      <!-- ABOUT US -->
+
       <div class="row">
         <div class="col-sm-full col-lg-half text-center address-section">
-          <img class="small-logo" src="images/uci-nursing-logo-sm.png" alt="UCI Nursing Logo Small">
-        </div>
-        <div class="col-sm-full col-lg-half text-center address-section">
+          <h3>UCI Sue & Bill Gross School of Nursing</h3>
           <p>Berk Hall</p>
           <p>802 West Peltason</p>
           <p>Irvine CA 92612</p>
@@ -181,9 +195,11 @@
       <div class="row">
         <div class="col-sm-full about-section">
           <a class="footer-link" href="">About Us</a>
+          <a class="footer-link" href="">Citations & Resources</a>
         </div>
       </div>
     </div>
+
   </div>
   <p class="font-awesome" style="color: black">CLICK ME</p>
   <a style="color: black; font-size: 8px" href="https://www.flaticon.com/free-icons/open-menu"
