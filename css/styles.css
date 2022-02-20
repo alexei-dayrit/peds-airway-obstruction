@@ -1,0 +1,148 @@
+hr {
+  border: lightgray solid;
+  margin: 1rem 0;
+}
+
+h1,
+h2 {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  line-height: normal;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+h3,
+h4 {
+  margin: 0;
+  color: white;
+}
+
+a {
+  font-family: 'Lato', sans-serif;
+  padding-right: 1rem;
+  margin-right: 1rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.header-title {
+  margin: 1rem;
+}
+
+
+/* NAVBAR */
+/* NAVBAR */
+
+.flex-nav {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+li {
+  letter-spacing: 0.0625em;
+}
+
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222222;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.primary-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: hsl(0 0% 0% / 0.75);
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+  .primary-navigation {
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(1rem);
+  }
+}
+
+.primary-navigation a {
+  text-decoration: none;
+  color: #989898;
+}
+
+.primary-navigation a > [aria-hidden="true"] {
+  font-weight: 700;
+  margin-inline-end: .3em;
+}
+
+/* LOGO STYLING */
+/* LOGO STYLING */
+
+.small-logo {
+  width: 30%;
+}
+
+.nursing-big-logo {
+  width: 80%;
+}
+
+/* LINKS STYLING */
+/* LINKS STYLING */
+
+.protocol-link,
+.survey-link,
+.footer-link {
+  text-decoration: none;
+  color: white;
+  background-color: #0064a4;
+  line-height: 1.5;
+  padding: 0.2rem 0;
+  display: block;
+  text-align: center;
+}
+
+.protocol-image {
+  object-fit: contain;
+  width: 100%;
+  height: 150px;
+}
+
+.address-section > p {
+  margin: 0;
+  line-height: 1.1;
+  color: white;
+}
+
+/* FOOTER SECTION */
+/* FOOTER SECTION */
+
+.footer {
+  margin-top: 0.5rem;
+  line-height: normal;
+}
+
+.footer-underline {
+  width: 200px;
+  height: 1px;
+  background-color: #8193a3;
+  margin-top: 0.2rem;
+  margin-bottom: 0.6rem;
+}
+
+/* UTILITY CLASSES */
+/* UTILITY CLASSES */
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+  margin: auto;
+}
+
+/* background coclor #0F2336 */

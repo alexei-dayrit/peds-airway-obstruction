@@ -1,0 +1,116 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.3;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: .04rem;
+  overflow-x: hidden;
+  background-color: #E6F1F5;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.main-container {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 8rem;
+  padding: 0 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-sm-full {
+  width: 100%;
+}
+
+.col-sm-half {
+  width: 50%;
+}
+
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: #222222;
+}
+
+.airway-container {
+  background-color: #eeeeee;
+}
+
+.about-container {
+  background-color: #555759;
+}
+
+/* LG MEDIA */
+
+@media only screen and (min-width: 560px) {
+  .main-container {
+    max-width: 1200px;
+    padding: 1rem 2rem;
+  }
+
+  .col-lg-half {
+    width: 50%;
+  }
+
+  .col-lg-full {
+    width: 100%;
+  }
+
+  .nursing-big-logo {
+    width: 30%;
+  }
+  .small-logo {
+    width: 30%
+  }
+}
+
+/* NAVBAR MEDIA */
+
+@media only screen and (max-width: 560px) {
+  .primary-navigation {
+    --gap: 2em;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 30%;
+    flex-direction: column;
+    padding: min(30vh, 5rem) 2rem;
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+  }
+
+  .primary-navigation[data-visible="true"] {
+    transform: translateX(0%);
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    z-index: 9000;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background-color: transparent;
+    background-image: url(images/bars-solid.svg);
+    background-repeat: no-repeat;
+    font-weight: 700;
+    border: 0;
+    width: 2rem;
+    aspect-ratio: 1;
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url("images/xmark-solid.svg");
+  }
