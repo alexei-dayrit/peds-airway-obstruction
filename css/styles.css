@@ -29,10 +29,15 @@ a:hover {
   text-decoration: underline;
 }
 
+.team-member > p > a:visited {
+  color: #ffd200;
+}
+
 .header-title {
   margin: 1rem;
   padding-left: 1rem;
   color: white;
+  cursor: pointer;
 }
 
 
@@ -65,17 +70,24 @@ li {
   background: hsl(0 0% 0% / 0.75);
 }
 
+.primary-navigation a {
+  text-decoration: none;
+  /* color: #989898; */
+  color: white;
+}
+
 @supports (backdrop-filter: blur(1rem)) {
   .primary-navigation {
-    background: hsl(0 0% 100% / 0.1);
+    background: hsl(0 0% 50% / 0.3);
     backdrop-filter: blur(1rem);
+  }
+
+  .primary-navigation a {
+    color: white;
+    text-decoration: none;
   }
 }
 
-.primary-navigation a {
-  text-decoration: none;
-  color: #989898;
-}
 
 .primary-navigation a > [aria-hidden="true"] {
   font-weight: 700;
@@ -87,11 +99,12 @@ li {
 
 .main-ol {
   padding: 0;
+  margin-bottom: 0;
 }
 
 .airway-list {
   padding: 0;
-  padding-left: 1.4rem
+  padding-left: 1.4rem;
 }
 
 .airway-list-items {
@@ -129,9 +142,17 @@ li {
   color: #ffd200;
 }
 
+.cpr-protocol-link {
+  padding-bottom: 0.5rem;
+}
+
 .bottom-links {
   padding-top: 0.8rem;
   padding-bottom: 0.5rem;
+}
+
+.team-member > a {
+  color: #0064a4;
 }
 
 .carrot:after {
@@ -147,11 +168,24 @@ li {
   height: 200px;
 }
 
-.address-section > p {
+.profile-pic,
+.profile-pic-v2 {
+  border-radius: 100%;
+  border: 3px solid #ffd200;
+  width: 40%;
+  object-fit: contain;
+}
+
+.address-section > p,
+.team-member >p {
   margin: 0;
   line-height: 1;
   font-size: 0.8rem;
   color: white;
+}
+
+.team-member {
+  padding: 1rem;
 }
 
 .project-info {
@@ -202,6 +236,17 @@ li {
   padding-bottom: 0.6rem;
 }
 
+.text-white {
+  color: white;
+}
+
+.about-underline {
+  border-bottom: 1px solid #f7eb5f;
+  padding: 0.7rem 0;
+  margin-bottom: 2rem;
+  width: 90%;
+}
+
 .hacky {
-  margin-top: 2.3rem;
+    margin-top: 2.3rem;
 }

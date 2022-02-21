@@ -10,44 +10,45 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@300;700&display=swap"
-  rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@300;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
 
+  <!-- HEADER SECTION -->
+
+  <div class="header-container">
+    <header class="primary-header flex-nav">
+      <div>
+        <h1 class="header-title">UCI</h1>
+      </div>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex-nav">
+          <li><a class="cpr-nav-link" href="#cpr-protocol">
+              <span aria-hidden="true"></span>CPR</a>
+          </li>
+          <li><a class="airway-nav-link" href="#airway-obstruction-protocol">
+              <span aria-hidden="true"></span>Airway Obstruction</a>
+          </li>
+          <li><a class="survey-nav-link" href="#survey">
+              <span aria-hidden="true"></span>Surveys</a>
+          </li>
+          <li><a class="info-nav-link" href="#more-info">
+              <span aria-hidden="true"></span>About Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
   <div class="main-container">
 
-    <!-- HEADER SECTION -->
-
-    <div class="header-container">
-      <header class="primary-header flex-nav">
-        <div>
-          <h1 class="header-title">UCI</h1>
-        </div>
-        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-          <span class="sr-only">Menu</span>
-        </button>
-        <nav>
-          <ul id="primary-navigation" data-visible="false" class="primary-navigation flex-nav">
-            <li><a class="cpr-nav-link" href="#cpr-protocol">
-                <span aria-hidden="true"></span>CPR</a>
-            </li>
-            <li><a class="airway-nav-link" href="#airway-obstruction-protocol">
-                <span aria-hidden="true"></span>Airway Obstruction</a>
-            </li>
-            <li><a class="survey-nav-link" href="#survey">
-                <span aria-hidden="true"></span>Surveys</a>
-            </li>
-            <li><a class="info-nav-link" href="#more-info">
-                <span aria-hidden="true"></span>About Us</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-
-  <!-- LOGO CONTAINER -->
+    <!-- LOGO CONTAINER -->
 
     <div class="uci-logo-container" id="cpr-protocol">
       <div class="row text-center">
@@ -71,11 +72,11 @@
             in eligendi ratione commodi doloremque quasi beatae molestias? Provident
             ipsum quam sunt unde obcaecati quas debitis, officia similique atque.
           </p>
-          <p class="text-center">
-            Please see protocol for code blue:
+          <p class="text-center cpr-protocol-links">
+            Please see for pediatric airway emergency:<br>
             <a class="protocol-link text-upper text-bold carrot"
               href="https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/Algorithms/AlgorithmPALS_CA_200707.pdf">
-              CPR Protocol
+              CPR Algorithm
             </a>
           </p>
 
@@ -85,12 +86,12 @@
                 Post-arrest Flowsheet
               </a>
             </div>
-            <div class="col-sm-half col-lg-third bottom-links ">
+            <div class="col-sm-half col-lg-third bot-lg-links">
               <a class="protocol-link text-upper carrot" href="pdf/milestones-chart.pdf">
                 Milestones
               </a>
             </div>
-            <div class="col-sm-half col-lg-third bottom-links" id="airway-obstruction-protocol">
+            <div class="col-sm-half col-lg-third bot-lg-links" id="airway-obstruction-protocol">
               <a class="protocol-link text-upper carrot" href="pages/cpr-educational-links.html">
                 Educational Links
               </a>
@@ -109,7 +110,8 @@
           <p>
             View full protocol for both upper and lower airway obstruction flowsheets.
           </p>
-          <a class="airway-link text-upper text-bold carrot" href="pdf/full-airway-obstruction-protocol.pdf">View Full Protocol</a>
+          <a class="airway-link text-upper text-bold carrot" href="pdf/full-airway-obstruction-protocol.pdf">View Full
+            Protocol</a>
           <hr>
         </div>
         <div class="col-sm-full col-lg-half airway-section">
@@ -132,7 +134,7 @@
             </ol>
           </ol>
           </p>
-          <p class="text-center hacky">Please see protocol for immediate care interventions:
+          <p class="text-center hacky">Please see for immediate care interventions:
             <a class="airway-link text-upper text-bold carrot" href="pdf/upper-airway-protocol.pdf">Protocol</a>
           </p>
           <div class="row bottom-links text-center">
@@ -166,7 +168,7 @@
             </ol>
           </ol>
           </p>
-          <p class="text-center">Please see protocol for immediate care interventions:
+          <p class="text-center">Please see for immediate care interventions:
             <a class="airway-link text-upper text-bold carrot" href="pdf/lower-airway-protocol.pdf">Protocol</a>
           </p>
           <div class="row bottom-links text-center">
@@ -225,14 +227,100 @@
           <p><a class="footer-link" href="https://nursing.uci.edu/">nursing.uci.edu</a></p>
         </div>
         <div class="project-info col-sm-full col-lg-half">
-          <h5>Project Information</h5>
+          <h5 class="test">Project Information</h5>
           <div class="footer-underline"></div>
-          <p><a class="footer-link" href="">About Us</a></p>
+          <p><a class="footer-link" href="#" id="about-us">About Us</a></p>
           <p><a class="footer-link" href="">Resources</a></p>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- ABOUT US CONTAINER VIEW SWAP -->
+
+  <div class="second-container hidden text-white">
+    <div class="row text-center">
+      <div class="col-sm-full">
+        <h1>Meet The Team</h1>
+        <p class="about-underline text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum modi
+          libero magnam maxime dolore sequi voluptates iure dolores quis cumque!</p>
+      </div>
+      <div class="col-sm-full col-lg-half team-member">
+        <img class="profile-pic" src="images/charmander.jpeg" alt="Profile Picture">
+        <h4>Mike Bueno MSN, RN, CNL</h4>
+        <p>HS Assistant Professor at UC Irvine</p>
+        <p>Description</p>
+        <p><a href="">mvbueno@uci.edu</a></p>
+        <p><a href="">linkedin</a></p>
+      </div>
+      <div class="col-sm-full col-lg-half team-member">
+        <img class="profile-pic" src="images/charmander.jpeg" alt="Profile Picture">
+        <h4>Chet Khay MSN, NP, RCP</h4>
+        <p>Pediatric Clinical Nurse Educator at UC Irvine Health</p>
+        <p>Description</p>
+        <p><a href="">ckhay@uci.edu</a></p>
+        <p><a href="">linkedin</a></p>
+      </div>
+      <div class="col-sm-full col-lg-half team-member">
+        <img class="profile-pic" src="images/charmander.jpeg" alt="Profile Picture">
+        <h4>Christelle Jade Cadang</h4>
+        <p>4th Year Nursing Student at UC Irvine</p>
+        <p>Description</p>
+        <p><a href="">cjcadang@uci.edu</a></p>
+        <p><a href="">linkedin</a></p>
+      </div>
+      <div class="col-sm-full col-lg-half team-member">
+        <img class="profile-pic" src="images/charmander.jpeg" alt="Profile Picture">
+        <h4>Melanie Castro</h4>
+        <p>4th Year Nursing Student at UC Irvine</p>
+        <p>Description</p>
+        <p><a href="">melansc1@uci.edu</a></p>
+        <p><a href="">linkedin</a></p>
+      </div>
+      <div class="col-sm-full col-lg-half team-member">
+        <img class="profile-pic" src="images/charmander.jpeg" alt="Profile Picture">
+        <h4>Juliana Chalfin</h4>
+        <p>4th Year Nursing Student at UC Irvine</p>
+        <p>Description</p>
+        <p><a href="">chalfinj@uci.edu</a></p>
+        <p><a href="">linkedin</a></p>
+      </div>
+      <div class="col-sm-full col-lg-half team-member">
+        <img class="profile-pic" src="images/charmander.jpeg" alt="Profile Picture">
+        <h4>Emily Chan</h4>
+        <p>4th Year Nursing Student at UC Irvine</p>
+        <p>Description</p>
+        <p><a href="">emilygc@uci.edu</a></p>
+        <p><a href="">linkedin</a></p>
+      </div>
+      <div class="col-sm-full col-lg-half team-member">
+        <img class="profile-pic" src="images/charmander.jpeg" alt="Profile Picture">
+        <h4>Cristal Gallegos</h4>
+        <p>4th Year Nursing Student at Sue & Bill Gross School of Nursing</p>
+        <p>Description</p>
+        <p><a href="">cristajg@uci.edu</a></p>
+        <p><a href="">linkedin</a></p>
+      </div>
+      <div class="col-sm-full col-lg-half team-member">
+        <img class="profile-pic" src="images/charmander.jpeg" alt="Profile Picture">
+        <h4>Nikita Paul</h4>
+        <p>4th Year Nursing Student at UC Irvine</p>
+        <p>Description</p>
+        <p><a href="">npaul2@hs.uci.edu</a></p>
+        <p><a href="">linkedin</a></p>
+      </div>
+      <div class="col-sm-full team-member">
+        <img class="profile-pic-v2" src="images/charmander.jpeg" alt="Profile Picture">
+        <h4>Alexei Dayrit</h4>
+        <p>Web Developer</p>
+        <p><a href="">alexeigdayrit@gmail.com</a></p>
+        <p><a href="">linkedin</a></p>
+      </div>
+    </div>
+  </div>
+
+
+
   <script src="main.js"></script>
 </body>
 

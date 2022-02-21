@@ -14,11 +14,16 @@ body {
   display: none !important;
 }
 
-.main-container {
+.main-container,
+.second-container {
   max-width: 500px;
   margin: 0 auto;
   margin-top: 5rem;
   background-color: #E6F1F5;
+}
+
+.second-container {
+  background-color: #0064a4;
 }
 
 .row {
@@ -68,9 +73,12 @@ body {
 }
 
 /* LG MEDIA */
+/* 560-666 */
+/* 666-full size */
 
 @media only screen and (min-width: 560px) {
-  .main-container {
+  .main-container,
+  .second-container {
     max-width: 1200px;
   }
 
@@ -100,6 +108,16 @@ body {
 
   .airway-section {
     padding: 0 1rem;
+  }
+
+  .bot-lg-links {
+    padding-top: 0.8rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .profile-pic-v2 {
+    width: 20%;
+    object-fit: contain;
   }
 }
 
