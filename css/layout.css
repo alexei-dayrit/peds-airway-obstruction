@@ -3,11 +3,11 @@ html {
 }
 
 body {
-  line-height: 1.3;
+  line-height: 1.4;
   font-family: 'Lato', sans-serif;
+  font-weight: 100;
   letter-spacing: .04rem;
   overflow-x: hidden;
-  background-color: #E6F1F5;
 }
 
 .hidden {
@@ -17,8 +17,8 @@ body {
 .main-container {
   max-width: 500px;
   margin: 0 auto;
-  margin-top: 8rem;
-  height: 100%;
+  margin-top: 5rem;
+  background-color: #E6F1F5;
 }
 
 .row {
@@ -39,16 +39,32 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem;
+  padding: 0.3rem;
   background-color: #222222;
 }
 
+.uci-logo-container {
+  padding: 1.5rem 1rem;
+}
+
+.cpr-container {
+  background-color: #1b3d6d;
+  color: white;
+  padding: 1.5rem 1rem;
+}
+
 .airway-container {
-  background-color: #cdcdcd;
+  background-color: #ececec;
+  padding: 1.5rem 0.5rem;
+}
+
+.survey-container {
+  padding: 1.5rem 1.2rem;
 }
 
 .about-container {
-  background-color: #555759;
+  background-color: #1b3d6d;
+  padding: 1.5rem 1.2rem;
 }
 
 /* LG MEDIA */
@@ -69,8 +85,21 @@ body {
   .nursing-big-logo {
     width: 30%;
   }
+
   .small-logo {
     width: 30%;
+  }
+
+  .survey-lg-par {
+  width: 80%;
+  }
+
+  .col-lg-third {
+  width: 33%;
+  }
+
+  .airway-section {
+    padding: 0 1rem;
   }
 }
 
@@ -99,10 +128,10 @@ body {
     display: block;
     z-index: 9000;
     position: absolute;
-    top: 2rem;
+    top: 1.5rem;
     right: 2rem;
     background-color: transparent;
-    background-image: url(images/bars-solid.svg);
+    background-image: url(../images/bars-solid.svg);
     background-repeat: no-repeat;
     font-weight: 700;
     border: 0;
@@ -111,5 +140,5 @@ body {
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
-    background-image: url("images/xmark-solid.svg");
+    background-image: url("../images/xmark-solid.svg");
   }

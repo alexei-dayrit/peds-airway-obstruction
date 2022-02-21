@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather:wght@300;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@300;700&display=swap"
+  rel="stylesheet">
 </head>
 
 <body>
@@ -30,16 +30,16 @@
         </button>
         <nav>
           <ul id="primary-navigation" data-visible="false" class="primary-navigation flex-nav">
-            <li><a class="cpr-nav-link" href="">
+            <li><a class="cpr-nav-link" href="#cpr-protocol">
                 <span aria-hidden="true"></span>CPR</a>
             </li>
-            <li><a href="">
+            <li><a class="airway-nav-link" href="#airway-obstruction-protocol">
                 <span aria-hidden="true"></span>Airway Obstruction</a>
             </li>
-            <li><a href="">
+            <li><a class="survey-nav-link" href="#survey">
                 <span aria-hidden="true"></span>Surveys</a>
             </li>
-            <li><a href="">
+            <li><a class="info-nav-link" href="#more-info">
                 <span aria-hidden="true"></span>About Us</a>
             </li>
           </ul>
@@ -47,16 +47,21 @@
       </header>
     </div>
 
-    <!-- CPR SECTION -->
+  <!-- LOGO CONTAINER -->
 
-    <div class="cpr-container">
+    <div class="uci-logo-container" id="cpr-protocol">
       <div class="row text-center">
         <div class="col-sm-full">
           <img class="nursing-big-logo" src="images/uci-nursing-logo-lg.png" alt="UCI Nursing Logo">
         </div>
       </div>
+    </div>
+
+    <!-- CPR SECTION -->
+
+    <div class="cpr-container text-center">
       <div class="row">
-        <div class="col-sm-full" id="cpr-protocol">
+        <div class="col-sm-full">
           <h1 class="text-upper">Pediatric CPR</h1>
           <div>
             <img class="protocol-image" src="images/detective-pika.jpeg" alt="CPR Image">
@@ -66,19 +71,31 @@
             in eligendi ratione commodi doloremque quasi beatae molestias? Provident
             ipsum quam sunt unde obcaecati quas debitis, officia similique atque.
           </p>
-          <a class="protocol-link text-upper"
-            href="https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/Algorithms/AlgorithmPALS_CA_200707.pdf">
-            CPR Protocol
-          </a>
-          <a class="protocol-link text-upper" href="pdf/post-arrest-flowsheet.pdf">
-            Post-arrest Flowsheet: 'Snot-PP'
-          </a>
-          <a class="protocol-link text-upper" href="pdf/milestones-chart.pdf">
-            Milestones
-          </a>
-          <a class="protocol-link text-upper" href="pages/cpr-educational-links.html">
-            Educational Links
-          </a>
+          <p class="text-center">
+            Please see protocol for code blue:
+            <a class="protocol-link text-upper text-bold carrot"
+              href="https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/Algorithms/AlgorithmPALS_CA_200707.pdf">
+              CPR Protocol
+            </a>
+          </p>
+
+          <div class="row">
+            <div class="col-sm-full col-lg-third bottom-links">
+              <a class="protocol-link text-upper carrot" href="pdf/post-arrest-flowsheet.pdf">
+                Post-arrest Flowsheet
+              </a>
+            </div>
+            <div class="col-sm-half col-lg-third bottom-links ">
+              <a class="protocol-link text-upper carrot" href="pdf/milestones-chart.pdf">
+                Milestones
+              </a>
+            </div>
+            <div class="col-sm-half col-lg-third bottom-links" id="airway-obstruction-protocol">
+              <a class="protocol-link text-upper carrot" href="pages/cpr-educational-links.html">
+                Educational Links
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -87,23 +104,24 @@
 
     <div class="airway-container">
       <div class="row">
-        <div class="col-sm-full">
-          <h1 class="text-upper">Airway Obstruction</h1>
+        <div class="col-sm-full padding-bot text-center">
+          <h1 class="text-upper">Pediatric Airway Obstruction</h1>
           <p>
             View full protocol for both upper and lower airway obstruction flowsheets.
           </p>
-          <a class="protocol-link text-upper" href="pdf/full-airway-obstruction-protocol.pdf">View Full Protocol</a>
+          <a class="airway-link text-upper text-bold carrot" href="pdf/full-airway-obstruction-protocol.pdf">View Full Protocol</a>
+          <hr>
         </div>
-        <div class="col-sm-full col-lg-half">
+        <div class="col-sm-full col-lg-half airway-section">
           <h2 class="text-upper">Upper Airway Obstruction</h2>
           <div>
             <img class="protocol-image" src="images/detective-pika.jpeg" alt="Upper Airway Obstruction Image">
           </div>
           <p>
-          <ol>
-            <ol type="i">
+          <ol class="main-ol">
+            <ol class="airway-list" type="i">
               <li>Clinical manifestations:</li>
-              <ol type="a">
+              <ol class="airway-list-items" type="a">
                 <li>Barking cough, hoarseness, inspiratory stridor</li>
                 <li>Ingestion, gasping, sudden onset of symptoms, drooling</li>
                 <li>No spontaneous coughing, absent lung sounds</li>
@@ -114,23 +132,30 @@
             </ol>
           </ol>
           </p>
-          <p class="hacky">Please see protocol for immediate care interventions.</p>
-          <a class="airway-link text-upper" href="pdf/upper-airway-protocol.pdf">Protocol</a>
-          <a class="airway-link text-upper" href="images/upper-airway-badge.png">Badge Buddy</a>
-          <a class="airway-link text-upper" href="pages/uao-educational-links.html">
-            Educational Links
-          </a>
+          <p class="text-center hacky">Please see protocol for immediate care interventions:
+            <a class="airway-link text-upper text-bold carrot" href="pdf/upper-airway-protocol.pdf">Protocol</a>
+          </p>
+          <div class="row bottom-links text-center">
+            <div class="col-sm-half">
+              <a class="airway-link text-upper carrot" href="images/upper-airway-badge.png">Badge Buddy</a>
+            </div>
+            <div class="col-sm-half">
+              <a class="airway-link text-upper carrot" href="pages/uao-educational-links.html">
+                Educational Links
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-full col-lg-half">
+        <div class="col-sm-full col-lg-half airway-section">
           <h2 class="text-upper">Lower Airway Obstruction</h2>
           <div>
             <img class="protocol-image" src="images/detective-pika.jpeg" alt="Lower Airway Obstruction Image">
           </div>
           <p>
-          <ol>
-            <ol type="i">
+          <ol class="main-ol">
+            <ol class="airway-list" type="i">
               <li>Clinical manifestations:</li>
-              <ol type="a">
+              <ol class="airway-list-items" type="a">
                 <li>Child is unable to feed well or speak more than 1-2 words at a time; grunting</li>
                 <li>High-pitched wheezing</li>
                 <li>Severe, multiple retractions; tachypnea</li>
@@ -141,36 +166,43 @@
             </ol>
           </ol>
           </p>
-          <p>Please see protocol for immediate care interventions.</p>
-          <a class="airway-link text-upper" href="pdf/lower-airway-protocol.pdf">Protocol</a>
-          <a class="airway-link text-upper" href="images/lower-airway-badge.png">Badge Buddy</a>
-          <a class="airway-link text-upper" href="pages/lao-educational-links.html">
-            Educational Links
-          </a>
+          <p class="text-center">Please see protocol for immediate care interventions:
+            <a class="airway-link text-upper text-bold carrot" href="pdf/lower-airway-protocol.pdf">Protocol</a>
+          </p>
+          <div class="row bottom-links text-center">
+            <div class="col-sm-half">
+              <a class="airway-link text-upper carrot" href="images/lower-airway-badge.png">Badge Buddy</a>
+            </div>
+            <div class="col-sm-half">
+              <a class="airway-link text-upper carrot" href="pages/lao-educational-links.html">
+                Educational Links
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- SURVEYS -->
 
-    <div class="survey-container">
+    <div class="survey-container text-center" id="survey">
       <div class="column">
         <div class="col-sm-ful">
           <h1 class="text-upper">Surveys</h1>
-          <p>
+          <p class="text-center survey-lg-par">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab fugit vel
             in eligendi ratione commodi doloremque quasi beatae molestias? Provident
             ipsum quam sunt unde obcaecati quas debitis, officia similique atque.
           </p>
-          <div class="row">
+          <div class="row bottom-links">
             <div class="col-sm-half">
-              <a class="survey-link text-upper"
+              <a class="survey-link text-upper carrot"
                 href="https://docs.google.com/forms/d/1l04Uby4R0SuwswvflPfQ1F9eXiHay0kcRAds5dG_5a4/prefill">
                 Pre-training
               </a>
             </div>
             <div class="col-sm-half">
-              <a class="survey-link text-upper"
+              <a class="survey-link text-upper carrot"
                 href="https://docs.google.com/forms/d/17Q3GmRvSwkYxECYOzVcaw9LVDJgVwSW4GdBx_3tGSe4/prefill">
                 Post-training
               </a>
@@ -182,21 +214,21 @@
 
     <!-- ABOUT US -->
 
-    <div class="about-container">
+    <div class="about-container text-center" id="more-info">
       <div class="row">
         <div class="col-sm-full col-lg-half text-center address-section">
-          <h3>UCI Sue & Bill Gross School of Nursing</h3>
+          <h4 class="padding-bottom">UCI Sue & Bill Gross <br>School of Nursing</h4>
           <p>Berk Hall</p>
           <p>802 West Peltason</p>
           <p>Irvine CA 92612</p>
           <p>(949)-824-1514</p>
-          <p><a class="info-link" href="https://nursing.uci.edu/">nursing.uci.edu</a></p>
+          <p><a class="footer-link" href="https://nursing.uci.edu/">nursing.uci.edu</a></p>
         </div>
-        <div class="col-sm-full col-lg-half">
-          <h4>Project Information</h4>
+        <div class="project-info col-sm-full col-lg-half">
+          <h5>Project Information</h5>
           <div class="footer-underline"></div>
-          <a class="footer-link" href="">About Us</a>
-          <a class="footer-link" href="">Citations & Resources</a>
+          <p><a class="footer-link" href="">About Us</a></p>
+          <p><a class="footer-link" href="">Resources</a></p>
         </div>
       </div>
     </div>
