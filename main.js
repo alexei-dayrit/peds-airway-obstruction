@@ -40,6 +40,7 @@ $infoNavLink.addEventListener('click', function (event) {
   $navToggle.setAttribute('aria-expanded', false);
   $mainContainer.setAttribute('class', 'main-container hidden');
   $secondContainer.setAttribute('class', 'second-container text-white');
+  window.scrollTo(0, 0);
 });
 
 var $mainContainer = document.querySelector('.main-container');
@@ -49,6 +50,7 @@ var $secondContainer = document.querySelector('.second-container');
 function hideMain (event) {
   $mainContainer.setAttribute('class', 'main-container hidden');
   $secondContainer.setAttribute('class', 'second-container text-white');
+  window.scrollTo(0, 0);
 }
 
 $aboutUsBtn.addEventListener('click', hideMain);
