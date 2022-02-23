@@ -10,19 +10,19 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Merriweather:wght@300;700&display=swap"
-  rel="stylesheet">
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Merriweather:wght@300;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-
   <!-- HEADER SECTION -->
-
   <div class="header-container">
     <header class="primary-header flex-nav">
-      <div>
-        <h1 class="header-title">UCI</h1>
+      <div id="header">
+        <a href="#header">
+          <h1 class="header-title">UCI</h1>
+        </a>
       </div>
       <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
         <span class="sr-only">Menu</span>
@@ -38,7 +38,7 @@
           <li><a class="survey-nav-link" href="#survey">
               <span aria-hidden="true"></span>Surveys</a>
           </li>
-          <li><a class="info-nav-link" href="#more-info">
+          <li><a class="info-nav-link" href="pages/about-us.html">
               <span aria-hidden="true"></span>About Us</a>
           </li>
         </ul>
@@ -189,8 +189,8 @@
     <!-- SURVEYS -->
 
     <div class="survey-container text-center" id="survey">
-      <div class="column">
-        <div class="col-sm-ful">
+      <div class="row">
+        <div class="col-sm-full">
           <h1 class="text-upper">Surveys</h1>
           <p class="text-center survey-lg-par">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab fugit vel
@@ -237,95 +237,8 @@
     </div>
   </div>
 
-  <!-- ABOUT US CONTAINER VIEW SWAP -->
 
-  <div class="second-container hidden text-white">
-    <div class="row text-center">
-      <div class="col-sm-full">
-        <h1>Meet The Team</h1>
-        <p class="about-underline text-center">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quam sequi
-          at, quasi consequatur aliquid, velit voluptate nam amet animi laborum?
-          Nesciunt ratione, in odio a voluptatibus ea molestias veniam vero repellat
-          repellendus praesentium molestiae porro possimus iusto inventore facere
-          quas magni mollitia deserunt reprehenderit deleniti, facilis corporis.
-          Recusandae, possimus.
-        </p>
-      </div>
-      <div class="col-sm-full col-lg-half team-member">
-        <img class="profile-pic" src="images/profile-pics/mike-bueno.jpg" alt="Profile Picture">
-        <h4>Mike Bueno, MSN, RN, CNL</h4>
-        <p class="position-title">HS Assistant Professor at UC Irvine</p>
-        <p>Description</p>
-        <p><a href="">mvbueno@uci.edu</a></p>
-        <p><a href="">linkedin</a></p>
-      </div>
-      <div class="col-sm-full col-lg-half team-member">
-        <img class="profile-pic" src="images/profile-pics/chet-khay.jpg" alt="Profile Picture">
-        <h4>Chet Khay, MSN, NP, RCP</h4>
-        <p class="position-title">Pediatric Clinical Nurse Educator at UC Irvine Health</p>
-        <p>Description</p>
-        <p><a href="">ckhay@uci.edu</a></p>
-        <p><a href="">linkedin</a></p>
-      </div>
-      <div class="col-sm-full col-lg-half team-member">
-        <img class="profile-pic" src="images/profile-pics/christelle-cadang.jpg" alt="Profile Picture">
-        <h4>Christelle Jade Cadang</h4>
-        <p>4th Year Nursing Student at UC Irvine</p>
-        <p class="position-title">Description</p>
-        <p><a href="">cjcadang@uci.edu</a></p>
-        <p><a href="">linkedin</a></p>
-      </div>
-      <div class="col-sm-full col-lg-half team-member">
-        <img class="profile-pic" src="images/charmander.jpeg" alt="Profile Picture">
-        <h4>Melanie Castro</h4>
-        <p>4th Year Nursing Student at UC Irvine</p>
-        <p class="position-title">Description</p>
-        <p><a href="">melansc1@uci.edu</a></p>
-        <p><a href="">linkedin</a></p>
-      </div>
-      <div class="col-sm-full col-lg-half team-member">
-        <img class="profile-pic" src="images/charmander.jpeg" alt="Profile Picture">
-        <h4>Juliana Chalfin</h4>
-        <p>4th Year Nursing Student at UC Irvine</p>
-        <p class="position-title">Description</p>
-        <p><a href="">chalfinj@uci.edu</a></p>
-        <p><a href="">linkedin</a></p>
-      </div>
-      <div class="col-sm-full col-lg-half team-member">
-        <img class="profile-pic" src="images/charmander.jpeg" alt="Profile Picture">
-        <h4>Emily Chan</h4>
-        <p>4th Year Nursing Student at UC Irvine</p>
-        <p class="position-title">Description</p>
-        <p><a href="">emilygc@uci.edu</a></p>
-        <p><a href="">linkedin</a></p>
-      </div>
-      <div class="col-sm-full col-lg-half team-member">
-        <img class="profile-pic" src="images/charmander.jpeg" alt="Profile Picture">
-        <h4>Cristal Gallegos</h4>
-        <p>4th Year Nursing Student at UC Irvine</p>
-        <p class="position-title">Description</p>
-        <p><a href="">cristajg@uci.edu</a></p>
-        <p><a href="">linkedin</a></p>
-      </div>
-      <div class="col-sm-full col-lg-half team-member">
-        <img class="profile-pic" src="images/charmander.jpeg" alt="Profile Picture">
-        <h4>Nikita Paul</h4>
-        <p>4th Year Nursing Student at UC Irvine</p>
-        <p class="position-title">Description</p>
-        <p><a href="">npaul2@hs.uci.edu</a></p>
-        <p><a href="">linkedin</a></p>
-      </div>
-      <div class="col-sm-full team-member">
-        <img class="profile-pic profile-pic-v2" src="images/profile-pics/alexei-dayrit.jpg" alt="Profile Picture">
-        <h4>Alexei Dayrit</h4>
-        <p>Web Developer</p>
-        <p class="position-title">Description</p>
-        <p><a href="">alexeigdayrit@gmail.com</a></p>
-        <p><a href="">linkedin</a></p>
-      </div>
-    </div>
-  </div>
+  <!-- ABOUT US CONTAINER VIEW SWAP -->
 
   <script src="main.js"></script>
 </body>

@@ -10,43 +10,59 @@
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/layout.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather:wght@300;700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Merriweather:wght@300;700&display=swap"
     rel="stylesheet">
 </head>
 
 <body>
-  <div class="container">
-    <header class="primary-header flex">
-      <div>
-        <a href="../index.html"><img class="big-logo" src="../images/uci-nursing-logo-lg.png"
-            alt="UCI Nursing Logo"></a>
-      </div>
-      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-        <span class="sr-only">Menu</span>
-      </button>
-      <nav>
-        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-          <li class="active"><a href="">
-              <span aria-hidden="true"></span>CPR</a>
-          </li>
-          <li><a href="">
-              <span aria-hidden="true"></span>Obstruction</a>
-          </li>
-          <li><a href="">
-              <span aria-hidden="true"></span>Surveys</a>
-          </li>
-          <li><a href="">
-              <span aria-hidden="true"></span>Resources</a>
-          </li>
-        </ul>
-      </nav>
+  <!-- HEADER SECTION -->
+  <div class="header-container">
+    <header>
+      <div class="primary-header flex-nav">
+        <div id="header">
+          <a href="../index.html#header">
+            <h1 class="header-title">UCI</h1>
+          </a>
+        </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <span class="sr-only">Menu</span>
+        </button>
+        <nav>
+          <ul id="primary-navigation" data-visible="false" class="primary-navigation flex-nav">
+            <li><a class="cpr-nav-link" href="../index.html#cpr-protocol">
+                <span aria-hidden="true"></span>CPR</a>
+            </li>
+            <li><a class="airway-nav-link" href="../index.html#airway-obstruction-protocol">
+                <span aria-hidden="true"></span>Airway Obstruction</a>
+            </li>
+            <li><a class="survey-nav-link" href="../index.html#survey">
+                <span aria-hidden="true"></span>Surveys</a>
+            </li>
+            <li><a class="info-nav-link" href="about-us.html">
+                <span aria-hidden="true"></span>About Us</a>
+            </li>
+          </ul>
+        </nav>
     </header>
+  </div>
+
+  <div class="main-container">
+    <!-- LOGO CONTAINER -->
+
+    <div class="uci-logo-container" id="cpr-protocol">
+      <div class="row text-center">
+        <div class="col-sm-full">
+          <img class="nursing-big-logo" src="../images/uci-nursing-logo-lg.png" alt="UCI Nursing Logo">
+        </div>
+      </div>
+    </div>
     <div class="row">
       <div class="col-sm-full">
         <h1>Upper Airway Obstruction Educational Links</h1>
         <p>
-
-        </p>Some outside resources about upper airway obstruction, including RSV, foreign body obstruction, and croup management.
+        </p>Some outside resources about upper airway obstruction, including RSV, foreign body obstruction, and croup
+        management.
         <ul>
           <li>
             <a href="https://www.youtube.com/watch?v=Gtn1Ze_KeJE">

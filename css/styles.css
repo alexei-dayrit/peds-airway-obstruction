@@ -40,6 +40,10 @@ a:hover {
   cursor: pointer;
 }
 
+#header a:hover {
+  text-decoration: none;
+}
+
 
 /* NAVBAR */
 /* NAVBAR */
@@ -66,7 +70,7 @@ li {
 
 .primary-navigation {
   list-style: none;
-  padding: 0;
+  padding: 0 0.5rem;
   margin: 0;
   background: hsl(0 0% 0% / 0.75);
 }
@@ -74,6 +78,7 @@ li {
 .primary-navigation a {
   text-decoration: none;
   /* color: #989898; */
+  word-spacing: 2px;
   color: white;
 }
 
@@ -86,9 +91,9 @@ li {
   .primary-navigation a {
     color: white;
     text-decoration: none;
+    padding: 0.5rem
   }
 }
-
 
 .primary-navigation a > [aria-hidden="true"] {
   font-weight: 700;
@@ -158,6 +163,11 @@ li {
 
 /* OTHER STYLING */
 /* OTHER STYLING */
+
+.air-content {
+  line-height: 1;
+
+}
 
 .protocol-image {
   object-fit: contain;
