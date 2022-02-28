@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
   <title>Pediatric Airway Obstruction Protocol</title>
   <script src="https://kit.fontawesome.com/6f51956228.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/styles.css">
@@ -17,41 +18,30 @@
 
 <body>
   <!-- HEADER SECTION -->
-  <div class="header-container">
-    <header class="primary-header flex-nav">
-      <div id="header">
-        <a href="#header">
-          <h1 class="header-title">Pediatric Resources</h1>
-        </a>
-      </div>
-      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-        <span class="sr-only">Menu</span>
-      </button>
-      <nav>
-        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex-nav">
-          <li><a class="cpr-nav-link" href="#cpr-protocol">
-              <span aria-hidden="true"></span>CPR</a>
-          </li>
-          <li><a class="airway-nav-link" href="#airway-obstruction-protocol">
-              <span aria-hidden="true"></span>Airway Obstruction</a>
-          </li>
-          <li><a class="survey-nav-link" href="#survey">
-              <span aria-hidden="true"></span>Survey</a>
-          </li>
-          <li><a class="info-nav-link" href="pages/about-us.html">
-              <span aria-hidden="true"></span>About Us</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </div>
+  <header>
+    <div id="header">
+      <a href="#header">
+        <h2 class="logo header-title">Pediatric Resources</h2>
+      </a>
+    </div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav>
+      <ul>
+        <li><a href="#cpr-protocol">CPR</a></li>
+        <li><a href="#airway-obstruction-protocol">Airway Obstruction</a></li>
+        <li><a href="#survey">Survey</a></li>
+        <li><a href="pages/about-us.html">About Us</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </header>
 
   <div class="main-container">
-
     <!-- LOGO CONTAINER -->
-
-    <div class="uci-logo-container" id="cpr-protocol">
-      <div class="row text-center">
+    <div class="uci-logo-container">
+      <div class="row text-center" id="cpr-protocol">
         <div class="col-sm-full">
           <img class="nursing-big-logo" src="images/uci-nursing-logo-lg.png" alt="UCI Nursing Logo">
         </div>
@@ -59,7 +49,6 @@
     </div>
 
     <!-- CPR SECTION -->
-
     <div class="cpr-container text-center">
       <div class="row">
         <div class="col-sm-full">
@@ -74,8 +63,7 @@
           </p>
           <p class="text-center cpr-protocol-links">
             Please see for pediatric airway emergency:<br>
-            <a class="protocol-link text-bold carrot"
-              href="pdf/aha-algorithms.pdf">
+            <a class="protocol-link text-bold carrot" href="pdf/aha-algorithms.pdf">
               AHA algorithms
             </a>
           </p>
@@ -102,7 +90,6 @@
     </div>
 
     <!-- AIRWAY OBSTRUCTION -->
-
     <div class="airway-container">
       <div class="row">
         <div class="col-sm-full padding-bot text-center">
@@ -187,7 +174,6 @@
     </div>
 
     <!-- SURVEYS -->
-
     <div class="survey-container text-center" id="survey">
       <div class="row">
         <div class="col-sm-full">
@@ -210,7 +196,6 @@
     </div>
 
     <!-- ABOUT US -->
-
     <div class="info-container text-center" id="more-info">
       <div class="row">
         <div class="col-sm-full col-lg-half text-center address-section">
@@ -225,15 +210,13 @@
           <h5 class="test">Project Information</h5>
           <div class="footer-underline"></div>
           <p><a class="footer-link" href="pages/about-us.html" id="about-us">About Us</a></p>
-          <p><a class="footer-link" href="https://docs.google.com/document/d/1H-zvy3OPXkTCcem4xEzxCdsdvSrnWhLOKnR6-ZvuHF0/edit?usp=sharing">Resources</a></p>
+          <p><a class="footer-link"
+              href="https://docs.google.com/document/d/1H-zvy3OPXkTCcem4xEzxCdsdvSrnWhLOKnR6-ZvuHF0/edit?usp=sharing">Resources</a>
+          </p>
         </div>
       </div>
     </div>
   </div>
-
-
-  <!-- ABOUT US CONTAINER VIEW SWAP -->
-
   <script src="main.js"></script>
 </body>
 

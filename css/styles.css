@@ -37,71 +37,110 @@ a:hover {
   text-decoration: underline;
 }
 
-.header-title {
-  margin: 1rem;
-  margin-left: 2.5rem;
-  color: white;
-  cursor: pointer;
-}
-
 #header a:hover {
   text-decoration: none;
 }
 
-
 /* NAVBAR */
 /* NAVBAR */
 
-.flex-nav {
-  display: flex;
-  gap: var(--gap, 1rem);
-}
-
-li {
-  letter-spacing: 0.0625em;
-}
-
-.primary-header {
-  align-items: center;
-  justify-content: space-between;
+header {
   background-color: #222222;
-  margin-right: 3rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
 }
 
-.mobile-nav-toggle {
-  display: none;
+.nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
 }
 
-.primary-navigation {
-  list-style: none;
-  padding: 0 0.5rem;
+.nav-toggle:focus ~ .nav-toggle-label {
+  outline: 3px solid rgba(lightblue, .75);
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  right: -3px;
+  margin-right: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+nav {
+  position: absolute;
+  text-align: center;
+  top: 100%;
+  left: 0;
+  background-color: #222222;
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 300ms ease-in-out;
+}
+
+nav ul {
   margin: 0;
-  background: hsl(0 0% 0% / 0.75);
+  padding: 0;
+  list-style: none;
 }
 
-.primary-navigation a {
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
   text-decoration: none;
-  /* color: #989898; */
-  word-spacing: 2px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  opacity: 0;
+  transition: opacity 100ms ease-in-out;
+}
+
+nav a:hover {
   color: white;
+  text-decoration: none;
 }
 
-@supports (backdrop-filter: blur(1rem)) {
-  .primary-navigation {
-    background: hsl(0 0% 50% / 0.3);
-    backdrop-filter: blur(1rem);
-  }
-
-  .primary-navigation a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem
-  }
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
 }
 
-.primary-navigation a > [aria-hidden="true"] {
-  font-weight: 700;
-  margin-inline-end: .3em;
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 100ms ease-in-out 100ms;
 }
 
 /* LIST STYLING */

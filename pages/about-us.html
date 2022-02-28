@@ -15,36 +15,28 @@
     rel="stylesheet">
 </head>
 
-<body>
+<body id="#top">
   <!-- HEADER SECTION -->
-  <div class="header-container">
-    <header class="primary-header flex-nav">
-      <div id="header">
-        <a href="../index.html#header">
-          <h1 class="header-title">Pediatric Resources</h1>
-        </a>
-      </div>
-      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-        <span class="sr-only">Menu</span>
-      </button>
-      <nav>
-        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex-nav">
-          <li><a class="cpr-nav-link" href="#cpr-protocol">
-              <span aria-hidden="true"></span>CPR</a>
-          </li>
-          <li><a class="airway-nav-link" href="#airway-obstruction-protocol">
-              <span aria-hidden="true"></span>Airway Obstruction</a>
-          </li>
-          <li><a class="survey-nav-link" href="#survey">
-              <span aria-hidden="true"></span>Survey</a>
-          </li>
-          <li><a class="info-nav-link" href="#more-info">
-              <span aria-hidden="true"></span>About Us</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </div>
+  <header>
+    <div id="header">
+      <a href="../index.html#header">
+        <h1 class="logo header-title">Pediatric Resources</h1>
+      </a>
+    </div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav>
+      <ul>
+        <li><a href="../index.html#cpr-protocol">CPR</a></li>
+        <li><a href="../index.html#airway-obstruction-protocol">Airway Obstruction</a></li>
+        <li><a href="../index.html#survey">Survey</a></li>
+        <li><a href="#top">About Us</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </header>
+
   <div class="main-container">
     <!-- LOGO CONTAINER -->
     <div class="uci-logo-container" id="cpr-protocol">
@@ -73,7 +65,6 @@
             </p>
           </div>
         </div>
-
         <div class="row text-center">
           <div class="col-sm-full col-lg-half team-member">
             <div class="circle-pic text-center" style="background-image: url('../images/profile-pics/chet-khay.jpg');"></div>
@@ -96,7 +87,6 @@
             </p>
           </div>
         </div>
-
         <div class="row text-center">
           <div class="col-sm-full col-lg-half team-member">
             <div class="circle-pic text-center" style="background-image: url('../images/profile-pics/christelle-cadang.jpg');"></div>
@@ -140,7 +130,6 @@
             </p>
           </div>
         </div>
-
         <div class="row text-center">
           <div class="col-sm-full col-lg-half team-member">
             <div class="circle-pic text-center" style="background-image: url('../images/profile-pics/cristal-gallegos.jpg');"></div>
@@ -163,7 +152,6 @@
             </p>
           </div>
         </div>
-
         <div class="row text-center">
           <div class="col-sm-full team-member">
             <div class="circle-pic text-center" style="background-image: url('../images/profile-pics/alexei-dayrit.jpg');"></div>
@@ -179,7 +167,5 @@
         </div>
       </div>
     </div>
-
 </body>
-
 </html>

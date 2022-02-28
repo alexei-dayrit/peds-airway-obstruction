@@ -18,7 +18,6 @@ body {
 .about-container {
   max-width: 500px;
   margin: 0 auto;
-  margin-top: 5rem;
   background-color: #E6F1F5;
 }
 
@@ -45,17 +44,9 @@ body {
   width: 50%;
 }
 
-.header-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0.3rem;
-  background-color: #222222;
-}
-
 .uci-logo-container {
   padding: 1.5rem 1rem;
+  margin-top: 4.5rem;
 }
 
 .cpr-container {
@@ -123,10 +114,12 @@ body {
   }
 
   .header-title {
-    margin: 1rem;
-    margin-left: 5rem;
-    color: white;
+    color: #ffd200;
     cursor: pointer;
+  }
+
+  .header-title:hover {
+    color: white;
   }
 
   .primary-navigation {
@@ -134,42 +127,64 @@ body {
   }
 }
 
-/* NAVBAR MEDIA */
-
-@media only screen and (max-width: 560px) {
-  .primary-navigation {
-    --gap: 2em;
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 30%;
-    flex-direction: column;
-    padding: min(30vh, 5rem) 2rem;
-    transform: translateX(100%);
-    transition: transform 350ms ease-out;
+@media screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
   }
 
-  .primary-navigation[data-visible="true"] {
-    transform: translateX(0%);
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
 
-  .mobile-nav-toggle {
+  #header,
+  .logo {
+    grid-column: 2 / 3;
+  }
+
+  nav {
+    all: unset;
+    text-align: left;
+    transition: none;
+    transform: scale(1,1);
+    background: none;
+    top: initial;
+    left: initial;
+
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+  nav a::before {
+    content: '';
     display: block;
-    z-index: 9000;
+    height: 5px;
+    background: black;
     position: absolute;
-    top: 1.5rem;
-    right: 2rem;
-    background-color: transparent;
-    background-image: url(../images/bars-solid.svg);
-    background-repeat: no-repeat;
-    font-weight: 700;
-    border: 0;
-    width: 2rem;
-    aspect-ratio: 1;
+    top: -.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
   }
 
-  .mobile-nav-toggle[aria-expanded="true"] {
-    background-image: url("../images/xmark-solid.svg");
+  nav a:hover::before {
+    transform: scale(1,1);
   }
+}
