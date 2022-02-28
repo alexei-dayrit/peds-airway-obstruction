@@ -6,7 +6,7 @@ body {
   line-height: 1.4;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
-  letter-spacing: .04rem;
+  letter-spacing: 0.0625em;
   overflow-x: hidden;
 }
 
@@ -15,16 +15,21 @@ body {
 }
 
 .main-container,
-.second-container {
+.about-container {
   max-width: 500px;
   margin: 0 auto;
   margin-top: 5rem;
   background-color: #E6F1F5;
 }
 
-.second-container {
+.about-container {
   background-color: #0064a4;
   margin-top: 0;
+}
+
+.educational-link-container {
+  height: 800px;
+  padding: 0 1rem;
 }
 
 .row {
@@ -54,7 +59,7 @@ body {
 }
 
 .cpr-container {
-  background-color: #1b3d6d;
+  background-color: #0064a4;
   color: white;
   padding: 1.5rem 1rem;
 }
@@ -69,7 +74,7 @@ body {
   color: white;
 }
 
-.about-container {
+.info-container {
   background-color: #1b3d6d;
   padding: 1.5rem 1.2rem;
 }
@@ -80,8 +85,8 @@ body {
 
 @media only screen and (min-width: 560px) {
   .main-container,
-  .second-container {
-    max-width: 1200px;
+  .about-container {
+    max-width: 1000px;
   }
 
   .col-lg-half {
@@ -101,7 +106,7 @@ body {
   }
 
   .survey-lg-par {
-  width: 80%;
+    width: 80%;
   }
 
   .col-lg-third {
@@ -115,12 +120,6 @@ body {
   .bot-lg-links {
     padding-top: 0.8rem;
     padding-bottom: 0.5rem;
-  }
-
-  .profile-pic-v2 {
-    width: 20%;
-    min-width: 20%;
-    object-fit: cover;
   }
 
   .header-title {

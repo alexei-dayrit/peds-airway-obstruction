@@ -25,12 +25,16 @@ a {
   letter-spacing: 0;
 }
 
-a:hover {
-  text-decoration: underline;
+a:visited {
+  color: #ffd200;
 }
 
-.team-member > p > a:visited {
-  color: #ffd200;
+.airway-link:visited {
+  color: #0064a4;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .header-title {
@@ -135,10 +139,31 @@ li {
 .airway-link {
   color: #0064a4;
 }
+
 .survey-link,
 .protocol-link,
 .footer-link {
   color: #ffd200;
+}
+
+.fa-envelope,
+.fa-linkedin {
+  color: #1b3d6d;
+}
+
+.fa-envelope:visited,
+.fa-linkedin:visited {
+  color:#1b3d6d;
+}
+
+.fa-envelope:hover,
+.fa-linkedin:hover {
+  color: #c6beb5;
+}
+
+i {
+  font-size: 1.3rem;
+  padding: 0 0.2rem;
 }
 
 .survey-link {
@@ -153,10 +178,6 @@ li {
   padding-bottom: 0.5rem;
 }
 
-.team-member > a {
-  color: #0064a4;
-}
-
 .carrot:after {
   content: ">";
 }
@@ -166,7 +187,6 @@ li {
 
 .air-content {
   line-height: 1;
-
 }
 
 .protocol-image {
@@ -175,23 +195,31 @@ li {
   height: 200px;
 }
 
-
-.profile-pic,
-.profile-pic-v2 {
-  border-radius: 100%;
+.circle-pic {
+  width: 200px;
   height: 200px;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;
   border: 3px solid #ffd200;
-  min-width: 50%;
-  width: 50%;
-  object-fit: cover;
 }
 
 .address-section > p,
-.team-member >p {
+.team-member > p {
   margin: 0;
   line-height: 1;
   font-size: 0.8rem;
   color: white;
+}
+
+.team-intro {
+  line-height: 1.6;
+}
+
+.team-member > p {
+  margin: 0 2rem;
+  padding: 0 1rem;
+  padding-bottom: 0.7rem;
 }
 
 .team-member {
@@ -233,6 +261,14 @@ li {
 
 /* UTILITY CLASSES */
 /* UTILITY CLASSES */
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
 
 .text-upper {
   text-transform: uppercase;
