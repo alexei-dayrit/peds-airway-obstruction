@@ -138,10 +138,18 @@ body {
     border-style: none;
   }
 
-  .protocol-image {
+  .cpr-image {
     object-fit: fill;
     width: 100%;
     height: 350px;
+    padding-bottom: 0.5rem;
+  }
+
+  .ua-image,
+  .la-image {
+    object-fit: fill;
+    width: 100%;
+    height: 300px;
     padding-bottom: 0.5rem;
   }
 }
