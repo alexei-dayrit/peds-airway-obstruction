@@ -68,6 +68,15 @@ nav a:hover {
 
 /* NAVBAR */
 
+.header-title {
+  color: #ffd200;
+  cursor: pointer;
+}
+
+.header-title:hover {
+  color: white;
+}
+
 header {
   background-color: #222;
   text-align: center;
@@ -91,6 +100,7 @@ header {
   height: 100%;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .nav-toggle:focus ~ .nav-toggle-label {
@@ -226,9 +236,6 @@ i {
   padding: 0 0.2rem;
 }
 
-.survey-link {
-}
-
 .cpr-protocol-link {
   padding-bottom: 0.5rem;
 }
@@ -352,9 +359,6 @@ h3.image-title3 {
   font-size: 0.8rem;
 }
 
-.airway-section {
-}
-
 /* FOOTER SECTION */
 
 /* FOOTER SECTION */
@@ -375,10 +379,6 @@ h3.image-title3 {
 /* UTILITY CLASSES */
 
 /* UTILITY CLASSES */
-
-/* .min-h-180px {
-  min-height: 180px;
-} */
 
 .flex {
   display: flex;

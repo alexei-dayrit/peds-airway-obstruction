@@ -78,12 +78,6 @@ body {
   padding: 1.5rem 1.2rem;
 }
 
-/* LG MEDIA */
-
-/* 560-666 */
-
-/* 666-full size */
-
 @media only screen and (min-width: 700px) {
   .main-container,
   .about-container {
@@ -121,15 +115,6 @@ body {
   .bot-lg-links {
     padding-top: 0.8rem;
     padding-bottom: 0.5rem;
-  }
-
-  .header-title {
-    color: #ffd200;
-    cursor: pointer;
-  }
-
-  .header-title:hover {
-    color: white;
   }
 
   .primary-navigation {
