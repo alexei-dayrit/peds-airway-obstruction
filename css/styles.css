@@ -5,7 +5,7 @@ hr {
 
 h1,
 h2 {
-  font-family: 'Merriweather', serif;
+  font-family: Merriweather, serif;
   text-align: center;
   line-height: normal;
   word-spacing: 2px;
@@ -20,21 +20,44 @@ h5 {
 }
 
 a {
-  font-family: 'Lato', sans-serif;
+  font-family: Lato, sans-serif;
   text-decoration: none;
   letter-spacing: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffd200;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  opacity: 0;
+  transition: opacity 100ms ease-in-out;
 }
 
 a:visited {
   color: #ffd200;
 }
 
-.airway-link:visited {
+a:hover {
+  text-decoration: underline;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 100ms ease-in-out 100ms;
+}
+
+.airway-link {
   color: #0064a4;
 }
 
-a:hover {
-  text-decoration: underline;
+.airway-link:visited {
+  color: #0064a4;
 }
 
 #header a:hover {
@@ -42,10 +65,11 @@ a:hover {
 }
 
 /* NAVBAR */
+
 /* NAVBAR */
 
 header {
-  background-color: #222222;
+  background-color: #222;
   text-align: center;
   position: fixed;
   top: 0;
@@ -59,10 +83,6 @@ header {
   left: -9999px !important;
 }
 
-.nav-toggle:focus ~ .nav-toggle-label {
-  outline: 3px solid rgba(lightblue, .75);
-}
-
 .nav-toggle-label {
   position: absolute;
   top: 0;
@@ -71,6 +91,10 @@ header {
   height: 100%;
   display: flex;
   align-items: center;
+}
+
+.nav-toggle:focus ~ .nav-toggle-label {
+  outline: 3px solid rgba(lightblue, 0.75);
 }
 
 .nav-toggle-label span,
@@ -86,7 +110,7 @@ header {
 
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-  content: '';
+  content: "";
   position: absolute;
 }
 
@@ -103,7 +127,7 @@ nav {
   text-align: center;
   top: 100%;
   left: 0;
-  background-color: #222222;
+  background-color: #222;
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
@@ -121,30 +145,12 @@ nav li {
   margin-left: 1em;
 }
 
-nav a {
-  text-decoration: none;
-  color: #ffd200;
-  font-size: 1.2rem;
-  text-transform: capitalize;
-  opacity: 0;
-  transition: opacity 100ms ease-in-out;
-}
-
-nav a:hover {
-  color: white;
-  text-decoration: none;
-}
-
 .nav-toggle:checked ~ nav {
-  transform: scale(1,1);
-}
-
-.nav-toggle:checked ~ nav a {
-  opacity: 1;
-  transition: opacity 100ms ease-in-out 100ms;
+  transform: scale(1, 1);
 }
 
 /* LIST STYLING */
+
 /* LIST STYLING */
 
 ol {
@@ -152,7 +158,7 @@ ol {
 }
 
 ol.overflow {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .cpr-text-wrapper > p.text-bold {
@@ -165,7 +171,7 @@ ol.overflow {
 
 .main-ol {
   padding: 0;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 .airway-list {
@@ -179,6 +185,7 @@ ol.overflow {
 }
 
 /* LOGO STYLING */
+
 /* LOGO STYLING */
 
 .small-logo {
@@ -190,11 +197,8 @@ ol.overflow {
 }
 
 /* LINKS STYLING */
-/* LINKS STYLING */
 
-.airway-link {
-  color: #0064a4;
-}
+/* LINKS STYLING */
 
 .survey-link,
 .protocol-link,
@@ -209,7 +213,7 @@ ol.overflow {
 
 .fa-envelope:visited,
 .fa-linkedin:visited {
-  color:#1b3d6d;
+  color: #1b3d6d;
 }
 
 .fa-envelope:hover,
@@ -235,19 +239,21 @@ i {
 }
 
 .educational-links {
-  color:#1b3d6d;
+  color: #1b3d6d;
 }
 
 .educational-links:visited {
   color: #1b3d6d;
 }
 
-.carrot:after {
+.carrot::after {
   content: ">";
 }
 
 /* CAROUSEL */
+
 /* CAROUSEL */
+
 /* CAROUSEL */
 
 .dot-container > i {
@@ -294,6 +300,7 @@ h3.image-title3 {
 }
 
 /* OTHER STYLING */
+
 /* OTHER STYLING */
 
 .air-content {
@@ -349,6 +356,7 @@ h3.image-title3 {
 }
 
 /* FOOTER SECTION */
+
 /* FOOTER SECTION */
 
 .footer {
@@ -365,7 +373,12 @@ h3.image-title3 {
 }
 
 /* UTILITY CLASSES */
+
 /* UTILITY CLASSES */
+
+/* .min-h-180px {
+  min-height: 180px;
+} */
 
 .flex {
   display: flex;
@@ -387,6 +400,10 @@ h3.image-title3 {
 
 .text-bold {
   font-weight: 400;
+}
+
+.text-normal {
+  font-weight: 300;
 }
 
 .text-center {

@@ -4,7 +4,7 @@ html {
 
 body {
   line-height: 1.4;
-  font-family: 'Lato', sans-serif;
+  font-family: Lato, sans-serif;
   font-weight: 100;
   letter-spacing: 0.0625em;
   overflow-x: hidden;
@@ -18,7 +18,7 @@ body {
 .about-container {
   max-width: 500px;
   margin: 0 auto;
-  background-color: #E6F1F5;
+  background-color: #e6f1f5;
 }
 
 .about-container {
@@ -79,10 +79,12 @@ body {
 }
 
 /* LG MEDIA */
+
 /* 560-666 */
+
 /* 666-full size */
 
-@media only screen and (min-width: 560px) {
+@media only screen and (min-width: 700px) {
   .main-container,
   .about-container {
     max-width: 1000px;
@@ -109,7 +111,7 @@ body {
   }
 
   .col-lg-third {
-  width: 33%;
+    width: 33%;
   }
 
   .airway-section {
@@ -173,11 +175,10 @@ body {
     all: unset;
     text-align: left;
     transition: none;
-    transform: scale(1,1);
+    transform: scale(1, 1);
     background: none;
     top: initial;
     left: initial;
-
     grid-column: 3 / 4;
     display: flex;
     justify-content: flex-end;
@@ -200,12 +201,12 @@ body {
   }
 
   nav a::before {
-    content: '';
+    content: "";
     display: block;
     height: 5px;
     background: black;
     position: absolute;
-    top: -.75em;
+    top: -0.75em;
     left: 0;
     right: 0;
     transform: scale(0, 1);
@@ -213,6 +214,6 @@ body {
   }
 
   nav a:hover::before {
-    transform: scale(1,1);
+    transform: scale(1, 1);
   }
 }
